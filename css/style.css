@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.debug .container {
+  border: 1px solid black;
+  height: 150px;
+}
+
+.debug .container [class*="col-"] {
+  border: 1px solid grey;
+}
+
+.top-header.container [class*="col-"] {
+  height: 60px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.container.top-header > .col-lg-2 {
+  position: relative;
+}
+.container.top-header > .col-lg-2 .logo {
+  position: absolute;
+  transform: translate(-0, 100%);
+}
+.logo {
+  height: 20px;
+}
+
+.container.top-header{
+  /* position: fixed; */
+}
+
+[class*="nav-"] li {
+  display: inline-block;
+}
+
+[class*="nav-"] li:not(:last-child) {
+  margin-right: 10px;
+}
+
+[class*="nav-"] li a {
+  text-decoration: none;
+  color: black;
+  text-transform: uppercase;
+}
+
+[class*="nav-"] {
+  text-align: right;
+  line-height: 60px;
+  vertical-align: middle;
+}
+
+.bg-img {
+  background-image: url(../img/hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+
+.bottom-header img {
+  height: 10%;
+}
+
+.bottom-header {
+  color: white;
+  text-align: center;
+}
